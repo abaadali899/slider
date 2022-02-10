@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>slider</title>
+  </head>
+  <body>
+    <div class="slider">
+      <!-- -------------------Radio Buttons Starts -------------------- -->
+      <div class="slideOn">
+        <input type="radio" name="radio" id="btn1" />
+        <input type="radio" name="radio" id="btn2" />
+        <input type="radio" name="radio" id="btn3" />
+        <input type="radio" name="radio" id="btn4" />
+        <input type="radio" name="radio" id="btn5" />
+        <!------------------------ Radio buttons Ends---------------------->
+        <!-- ----------------------Slider Imgs Starts------------------- -->
+        <div class="firstimg">
+          <img src="images/s1.png" alt="sliderimg" />
+        </div>
+        <div class="secondimg">
+          <img src="images/s2.png" alt="sliderimg" />
+        </div>
+        <div class="thirdimg">
+          <img src="images/s3.png" alt="sliderimg" />
+        </div>
+        <div class="forthimg">
+          <img src="images/s1.png" alt="sliderimg" />
+        </div>
+        <div class="fifthimg">
+          <img src="images/s2.png" alt="sliderimg" />
+        </div>
+        <!-- ----------------------Slider Imgs Ends-------------------- -->
+        <!-- ---------------------Navigation buttons starts------------ -->
+        <div class="autoNve">
+          <div class="autobtn1"></div>
+          <div class="autobtn2"></div>
+          <div class="autobtn3"></div>
+          <div class="autobtn4"></div>
+          <div class="autobtn5"></div>
+        </div>
+        <!-- ---------------------Navigation buttons Ends----------- -->
+      </div>
+      <!-- ---------------------Custom Navigation Stats------------- -->
+      <div class="custom_navigation">
+        <label for="btn1" class="custom-btn"></label>
+        <label for="btn2" class="custom-btn"></label>
+        <label for="btn3" class="custom-btn"></label>
+        <label for="btn4" class="custom-btn"></label>
+        <label for="btn5" class="custom-btn"></label>
+      </div>
+    </div>
+    <script>
+      var counter = 1;
+      setInterval(function () {
+        document.getElementById("btn" + counter).checked = true;
+        counter++;
+        if (counter > 4) {
+          counter = 1;
+        }
+      }, 5000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(9, 26, 29);
+}
+.slider {
+  height: 500px;
+  width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.slideOn {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+.slideOn input {
+  display: none;
+}
+.slideOn {
+  width: 20%;
+  transition: 2s;
+}
+.slideOn img {
+  width: 350px;
+  height: 400px;
+}
+
+/* ---------------------CSS for Custom Navigation------------------------- */
+
+.custom_navigation {
+  position: absolute;
+  width: 300px;
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+}
+.custom-btn {
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px;
+  border: 3px solid rgb(118, 211, 228);
+  transition: 1s;
+}
+.custom-btn:not(:last-child) {
+  margin-right: 15px;
+}
+.custom-btn:hover {
+  background-color: rgb(118, 211, 228);
+}
+/* ------------------Changing the Images using------------------------  */
+
+#btn1:checked ~ .firstimg {
+  margin-left: 0%;
+}
+#btn2:checked ~ .firstimg {
+  margin-left: -500%;
+}
+#btn3:checked ~ .firstimg {
+  margin-left: -1000%;
+}
+#btn4:checked ~ .firstimg {
+  margin-left: -1500%;
+}
+#btn5:checked ~ .firstimg {
+  margin-left: -2000%;
+}
+
+/* ------------- Here is css for auto nav-------------------- */
+.autoNve {
+  position: absolute;
+  display: flex;
+  width: 300px;
+  justify-content: center;
+  margin-top: 10px;
+}
+.autoNve div {
+  border: 3px solid rgb(118, 211, 228);
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.autoNve div:not(:last-child) {
+  margin-right: 15px;
+}
+
+#btn1:checked ~ .autoNve .autobtn1 {
+  background-color: rgb(118, 211, 228);
+}
+#btn2:checked ~ .autoNve .autobtn2 {
+  background-color: rgb(118, 211, 228);
+}
+
+#btn3:checked ~ .autoNve .autobtn3 {
+  background-color: rgb(118, 211, 228);
+}
+
+#btn4:checked ~ .autoNve .autobtn4 {
+  background-color: rgb(118, 211, 228);
+}
+
+#btn5:checked ~ .autoNve .autobtn5 {
+  background-color: rgb(118, 211, 228);
+}
